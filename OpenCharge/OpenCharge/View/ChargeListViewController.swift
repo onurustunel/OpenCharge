@@ -16,12 +16,13 @@ class ChargeListViewController: UIViewController {
         mapView.translatesAutoresizingMaskIntoConstraints = false
         return mapView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupView()
         setupMapView()
+        
     }
     
     fileprivate func setAnnotationPoints(_ locationList: [CLLocationCoordinate2D]) {

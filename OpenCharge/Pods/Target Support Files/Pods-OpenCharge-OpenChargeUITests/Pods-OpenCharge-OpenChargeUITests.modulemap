@@ -1,0 +1,6 @@
+framework module Pods_OpenCharge_OpenChargeUITests {
+  umbrella header "Pods-OpenCharge-OpenChargeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

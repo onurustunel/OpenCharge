@@ -15,6 +15,10 @@
 		771CA16C2832AF0B0052F9D5 /* OpenChargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CA16B2832AF0B0052F9D5 /* OpenChargeTests.swift */; };
 		771CA1772832AF0B0052F9D5 /* OpenChargeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CA1762832AF0B0052F9D5 /* OpenChargeUITests.swift */; };
 		771CA19E2832D9180052F9D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CA19D2832D9180052F9D5 /* Constants.swift */; };
+		771CA1A32832DDD80052F9D5 /* OpenCharge.plist in Resources */ = {isa = PBXBuildFile; fileRef = 771CA1A22832DDD80052F9D5 /* OpenCharge.plist */; };
+		9893EB725C09ABF10BFDB3C5 /* Pods_OpenChargeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4172D2AE9152BBA39F686CA /* Pods_OpenChargeTests.framework */; };
+		B15BA2A808BF670E3DA088D1 /* Pods_OpenCharge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F30E88AD6EE5884A9230 /* Pods_OpenCharge.framework */; };
+		ED0056DD1180ADD961A06B88 /* Pods_OpenCharge_OpenChargeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156F9C61A40ECA6C154C2CF6 /* Pods_OpenCharge_OpenChargeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11AE34508D967EE7108E33B7 /* Pods-OpenCharge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCharge.debug.xcconfig"; path = "Target Support Files/Pods-OpenCharge/Pods-OpenCharge.debug.xcconfig"; sourceTree = "<group>"; };
+		156F9C61A40ECA6C154C2CF6 /* Pods_OpenCharge_OpenChargeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCharge_OpenChargeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228689CC5EDA9849A5A3D50A /* Pods-OpenCharge-OpenChargeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCharge-OpenChargeUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCharge-OpenChargeUITests/Pods-OpenCharge-OpenChargeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D3255273338DF2ACA8F2CE6 /* Pods-OpenChargeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenChargeTests.release.xcconfig"; path = "Target Support Files/Pods-OpenChargeTests/Pods-OpenChargeTests.release.xcconfig"; sourceTree = "<group>"; };
+		558FFB76010C8E128EB13362 /* Pods-OpenCharge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCharge.release.xcconfig"; path = "Target Support Files/Pods-OpenCharge/Pods-OpenCharge.release.xcconfig"; sourceTree = "<group>"; };
+		570ED771D53C1FE861A01A8D /* Pods-OpenCharge-OpenChargeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCharge-OpenChargeUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCharge-OpenChargeUITests/Pods-OpenCharge-OpenChargeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		771CA1512832AF070052F9D5 /* OpenCharge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCharge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771CA1542832AF070052F9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		771CA1562832AF070052F9D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		771CA1762832AF0B0052F9D5 /* OpenChargeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChargeUITests.swift; sourceTree = "<group>"; };
 		771CA1782832AF0B0052F9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771CA19D2832D9180052F9D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		771CA1A22832DDD80052F9D5 /* OpenCharge.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OpenCharge.plist; sourceTree = "<group>"; };
+		7C13F30E88AD6EE5884A9230 /* Pods_OpenCharge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCharge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4172D2AE9152BBA39F686CA /* Pods_OpenChargeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenChargeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD2C9E3CEB2150D46304B34 /* Pods-OpenChargeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenChargeTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenChargeTests/Pods-OpenChargeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15BA2A808BF670E3DA088D1 /* Pods_OpenCharge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9893EB725C09ABF10BFDB3C5 /* Pods_OpenChargeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0056DD1180ADD961A06B88 /* Pods_OpenCharge_OpenChargeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F4A6779CD5FCEDAA14A3E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11AE34508D967EE7108E33B7 /* Pods-OpenCharge.debug.xcconfig */,
+				558FFB76010C8E128EB13362 /* Pods-OpenCharge.release.xcconfig */,
+				570ED771D53C1FE861A01A8D /* Pods-OpenCharge-OpenChargeUITests.debug.xcconfig */,
+				228689CC5EDA9849A5A3D50A /* Pods-OpenCharge-OpenChargeUITests.release.xcconfig */,
+				CCD2C9E3CEB2150D46304B34 /* Pods-OpenChargeTests.debug.xcconfig */,
+				3D3255273338DF2ACA8F2CE6 /* Pods-OpenChargeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6344DB5EECC46B8E39FB5D53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C13F30E88AD6EE5884A9230 /* Pods_OpenCharge.framework */,
+				156F9C61A40ECA6C154C2CF6 /* Pods_OpenCharge_OpenChargeUITests.framework */,
+				C4172D2AE9152BBA39F686CA /* Pods_OpenChargeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		771CA1482832AF070052F9D5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +124,8 @@
 				771CA16A2832AF0B0052F9D5 /* OpenChargeTests */,
 				771CA1752832AF0B0052F9D5 /* OpenChargeUITests */,
 				771CA1522832AF070052F9D5 /* Products */,
+				01F4A6779CD5FCEDAA14A3E6 /* Pods */,
+				6344DB5EECC46B8E39FB5D53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +149,7 @@
 				771CA15D2832AF0B0052F9D5 /* Assets.xcassets */,
 				771CA15F2832AF0B0052F9D5 /* LaunchScreen.storyboard */,
 				771CA1622832AF0B0052F9D5 /* Info.plist */,
+				771CA1A22832DDD80052F9D5 /* OpenCharge.plist */,
 			);
 			path = OpenCharge;
 			sourceTree = "<group>";
@@ -167,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771CA17B2832AF0B0052F9D5 /* Build configuration list for PBXNativeTarget "OpenCharge" */;
 			buildPhases = (
+				A7F530A9689FAF918E6D39CD /* [CP] Check Pods Manifest.lock */,
 				771CA14D2832AF070052F9D5 /* Sources */,
 				771CA14E2832AF070052F9D5 /* Frameworks */,
 				771CA14F2832AF070052F9D5 /* Resources */,
+				5C8427207CEB42C2AB3FFFCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771CA17E2832AF0B0052F9D5 /* Build configuration list for PBXNativeTarget "OpenChargeTests" */;
 			buildPhases = (
+				6E1568582825F30F898D2198 /* [CP] Check Pods Manifest.lock */,
 				771CA1632832AF0B0052F9D5 /* Sources */,
 				771CA1642832AF0B0052F9D5 /* Frameworks */,
 				771CA1652832AF0B0052F9D5 /* Resources */,
@@ -202,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771CA1812832AF0B0052F9D5 /* Build configuration list for PBXNativeTarget "OpenChargeUITests" */;
 			buildPhases = (
+				EDE2D61630C6E5C1C9D43B51 /* [CP] Check Pods Manifest.lock */,
 				771CA16E2832AF0B0052F9D5 /* Sources */,
 				771CA16F2832AF0B0052F9D5 /* Frameworks */,
 				771CA1702832AF0B0052F9D5 /* Resources */,
+				EC9C1986A6CFF115916874FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +314,7 @@
 			files = (
 				771CA1612832AF0B0052F9D5 /* LaunchScreen.storyboard in Resources */,
 				771CA15E2832AF0B0052F9D5 /* Assets.xcassets in Resources */,
+				771CA1A32832DDD80052F9D5 /* OpenCharge.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +333,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C8427207CEB42C2AB3FFFCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCharge/Pods-OpenCharge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCharge/Pods-OpenCharge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCharge/Pods-OpenCharge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1568582825F30F898D2198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenChargeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F530A9689FAF918E6D39CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCharge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC9C1986A6CFF115916874FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCharge-OpenChargeUITests/Pods-OpenCharge-OpenChargeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCharge-OpenChargeUITests/Pods-OpenCharge-OpenChargeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCharge-OpenChargeUITests/Pods-OpenCharge-OpenChargeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE2D61630C6E5C1C9D43B51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCharge-OpenChargeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		771CA14D2832AF070052F9D5 /* Sources */ = {
@@ -457,6 +610,7 @@
 		};
 		771CA17C2832AF0B0052F9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AE34508D967EE7108E33B7 /* Pods-OpenCharge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +629,7 @@
 		};
 		771CA17D2832AF0B0052F9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558FFB76010C8E128EB13362 /* Pods-OpenCharge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +648,7 @@
 		};
 		771CA17F2832AF0B0052F9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD2C9E3CEB2150D46304B34 /* Pods-OpenChargeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +670,7 @@
 		};
 		771CA1802832AF0B0052F9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3255273338DF2ACA8F2CE6 /* Pods-OpenChargeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +692,7 @@
 		};
 		771CA1822832AF0B0052F9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570ED771D53C1FE861A01A8D /* Pods-OpenCharge-OpenChargeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +712,7 @@
 		};
 		771CA1832832AF0B0052F9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228689CC5EDA9849A5A3D50A /* Pods-OpenCharge-OpenChargeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
