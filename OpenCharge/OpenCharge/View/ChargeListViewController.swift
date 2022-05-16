@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChargeListViewController.swift
 //  OpenCharge
 //
 //  Created by Onur Ustunel on 16.05.2022.
@@ -14,6 +14,4 @@ class ChargeListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
 }
-
