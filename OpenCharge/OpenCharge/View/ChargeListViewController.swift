@@ -8,7 +8,12 @@
 import UIKit
 import MapKit
 
-class ChargeListViewController: UIViewController {
+protocol ChargeListOutput {
+    func changeLoading(isLoading: Bool)
+    func saveData(values: [ChargerInfo])
+}
+
+final class ChargeListViewController: UIViewController {
     
     private lazy var mapView: MKMapView = {
         let mapView = MKMapView()
@@ -16,18 +21,23 @@ class ChargeListViewController: UIViewController {
         mapView.translatesAutoresizingMaskIntoConstraints = false
         return mapView
     }()
-    
+    private let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
+      
     private var data = [ChargerInfo]() {
         didSet {
             setAnnotationPoints(data)
         }
     }
     
+    lazy var viewModel: IChargeListViewModel = ChargeListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupView()
         setupMapView()
+        viewModel.setDelegate(outPut: self)
+        viewModel.fetchItems()
               
     }
     
@@ -55,14 +65,28 @@ class ChargeListViewController: UIViewController {
     
 }
 
+extension ChargeListViewController: ChargeListOutput {
+    func changeLoading(isLoading: Bool) {
+        isLoading ? self.indicator.startAnimating() : indicator.stopAnimating()
+    }
+    
+    func saveData(values: [ChargerInfo]) {
+      data = values
+    }
+    
+}
+
 extension ChargeListViewController {
     fileprivate func setupNavigationBar() {
         title = "Charger List"
     }
+    
     fileprivate func setupView() {
         view.addSubview(mapView)
+        view.addSubview(indicator)
         setupLayout()
     }
+    
     fileprivate func setupLayout() {
         NSLayoutConstraint.activate([
                                         mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -70,6 +94,7 @@ extension ChargeListViewController {
                                         mapView.topAnchor.constraint(equalTo: view.topAnchor),
                                         mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
         )
+        indicator.center = view.center
     }
 }
 
