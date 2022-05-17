@@ -17,22 +17,30 @@ class ChargeListViewController: UIViewController {
         return mapView
     }()
     
+    private var data = [ChargerInfo]() {
+        didSet {
+            setAnnotationPoints(data)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupView()
         setupMapView()
-        
+              
     }
     
-    fileprivate func setAnnotationPoints(_ locationList: [CLLocationCoordinate2D]) {
+    fileprivate func setAnnotationPoints(_ locationList: [ChargerInfo]) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             for index in locationList {
                 let annotation = CustomAnnotation()
-                annotation.ID = -1
-                annotation.coordinate = index
-                annotation.title = "Title"
+                let place = CLLocationCoordinate2D(latitude: index.AddressInfo?.Latitude ?? 0.0,
+                                                   longitude: index.AddressInfo?.Longitude ?? 0.0)
+                annotation.coordinate = place
+                annotation.ID = index.AddressInfo?.ID ?? -1
+                annotation.title = index.AddressInfo?.Title ?? ""
                 self.mapView.addAnnotation(annotation)
             }
         }
@@ -43,9 +51,8 @@ class ChargeListViewController: UIViewController {
         let span = MKCoordinateSpan(latitudeDelta: Constants.scale, longitudeDelta: Constants.scale)
         let region = MKCoordinateRegion(center: location, span: span)
         self.mapView.setRegion(region, animated: true)
-        setAnnotationPoints(Constants.dummyLocationList)
     }
-
+    
 }
 
 extension ChargeListViewController {
@@ -58,30 +65,33 @@ extension ChargeListViewController {
     }
     fileprivate func setupLayout() {
         NSLayoutConstraint.activate([
-            mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            mapView.topAnchor.constraint(equalTo: view.topAnchor),
-            mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
+                                        mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                                        mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                        mapView.topAnchor.constraint(equalTo: view.topAnchor),
+                                        mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
         )
     }
 }
 
 
 extension ChargeListViewController: MKMapViewDelegate {
-
-   func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-      print("calloutAccessoryControlTapped")
-   }
-
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        print("calloutAccessoryControlTapped")
+    }
+    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView){
         print("didSelectAnnotationTapped")
         if let customAnnotation = view.annotation as? CustomAnnotation {
-            print(customAnnotation.ID)
+            let selectedStation = data.filter { (element) -> Bool in
+                element.AddressInfo?.ID == customAnnotation.ID
+            }
+            print(selectedStation)
         }
     }
     
 }
 
 class CustomAnnotation: MKPointAnnotation {
-    var ID = 0
+    var ID = -1
 }
