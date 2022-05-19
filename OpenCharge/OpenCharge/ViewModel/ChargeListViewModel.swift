@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol IChargeListViewModel {
+protocol IChargeListViewModel: class {
     func fetchItems()
     func changeLoading()
     var chargeListData: [ChargerInfo] { get set }
@@ -30,6 +30,7 @@ final class ChargeListViewModel: IChargeListViewModel {
         chargeListService = OpenChargeNetworkService()
     }
     
+    /// This function runs api request and gives us a result.
     func fetchItems() {
         changeLoading()
         chargeListService.fetchAllData { [weak self] (result) in
@@ -39,6 +40,7 @@ final class ChargeListViewModel: IChargeListViewModel {
         }
     }
     
+    /// This function changes the state of activity indicator.
     func changeLoading() {
         isLoading = !isLoading
         delegate?.changeLoading(isLoading: isLoading)

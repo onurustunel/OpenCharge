@@ -7,11 +7,13 @@
 
 import Foundation
 
+/// This is the base model which is used in app very frequently
 struct ChargerInfo: Decodable  {
     var AddressInfo: AddressInfo?
     var NumberOfPoints: Int?
 }
 
+/// Address information model of charge station
 struct AddressInfo: Decodable {
     var ID: Int?
     var Title: String?
