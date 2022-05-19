@@ -6,8 +6,12 @@
 //
 
 import UIKit
+protocol IDetailChargeView: class {
+    func setupUI(addressName: String, charger: Int)
+    func chargePointDetect(chargePoint: Int) -> String
+}
 
-class DetailChargeView: UIView {
+class DetailChargeView: UIView, IDetailChargeView {
     
     private lazy var  visualView:  UIVisualEffectView = {
         let visualView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
@@ -71,7 +75,7 @@ class DetailChargeView: UIView {
     /// This function returns a  string after processed charger points
     /// - Parameter chargePoint: charger point number
     /// - Returns: It will be using inside of the label to give better information.
-    private func chargePointDetect(chargePoint: Int) -> String {
+    internal func chargePointDetect(chargePoint: Int) -> String {
         switch chargePoint {
         case -1:
             return "unknown charger point."

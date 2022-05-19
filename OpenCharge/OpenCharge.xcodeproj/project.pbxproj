@@ -21,6 +21,7 @@
 		771CA1DD28340C6B0052F9D5 /* ChargeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CA1DC28340C6B0052F9D5 /* ChargeListViewModel.swift */; };
 		776B209F283417C10015C75A /* ChargeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B209E283417C10015C75A /* ChargeDetailViewController.swift */; };
 		776B20A4283438BA0015C75A /* DetailChargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B20A3283438BA0015C75A /* DetailChargeView.swift */; };
+		776B20BC2836DCF20015C75A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 776B20BB2836DCF20015C75A /* test.json */; };
 		9893EB725C09ABF10BFDB3C5 /* Pods_OpenChargeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4172D2AE9152BBA39F686CA /* Pods_OpenChargeTests.framework */; };
 		B15BA2A808BF670E3DA088D1 /* Pods_OpenCharge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F30E88AD6EE5884A9230 /* Pods_OpenCharge.framework */; };
 		ED0056DD1180ADD961A06B88 /* Pods_OpenCharge_OpenChargeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156F9C61A40ECA6C154C2CF6 /* Pods_OpenCharge_OpenChargeUITests.framework */; };
@@ -70,6 +71,7 @@
 		771CA1DC28340C6B0052F9D5 /* ChargeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeListViewModel.swift; sourceTree = "<group>"; };
 		776B209E283417C10015C75A /* ChargeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeDetailViewController.swift; sourceTree = "<group>"; };
 		776B20A3283438BA0015C75A /* DetailChargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailChargeView.swift; sourceTree = "<group>"; };
+		776B20BB2836DCF20015C75A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		7C13F30E88AD6EE5884A9230 /* Pods_OpenCharge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCharge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4172D2AE9152BBA39F686CA /* Pods_OpenChargeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenChargeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD2C9E3CEB2150D46304B34 /* Pods-OpenChargeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenChargeTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenChargeTests/Pods-OpenChargeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				771CA16B2832AF0B0052F9D5 /* OpenChargeTests.swift */,
+				776B20BB2836DCF20015C75A /* test.json */,
 				771CA16D2832AF0B0052F9D5 /* Info.plist */,
 			);
 			path = OpenChargeTests;
@@ -344,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776B20BC2836DCF20015C75A /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
